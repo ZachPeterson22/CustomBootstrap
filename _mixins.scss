@@ -1,0 +1,18 @@
+@mixin border-mixin($style, $radius, $width){
+    -webkit-border-style: $style;
+    -webkit-border-radius: $radius;
+    -webkit-border-width: $width;
+
+    -moz-webkit-border-style: $style;
+    -moz-webkit-border-radius: $radius;
+    -moz-webkit-border-width: $width;
+
+    -ms-webkit-border-style: $style;
+    -ms-webkit-border-radius: $radius;
+    -ms-webkit-border-width: $width;
+
+    border-style: $style;
+    border-radius: $radius;
+    border-width: $width;
+}
+

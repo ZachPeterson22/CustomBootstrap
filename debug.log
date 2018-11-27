@@ -1,0 +1,2 @@
+[0427/130929.108:ERROR:exception_snapshot_win.cc(87)] thread ID 20096 not found in process
+[0427/130929.109:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

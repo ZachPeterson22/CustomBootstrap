@@ -1,0 +1,19 @@
+.button{
+    background-color: $primary-color;
+    color: $default2-color;
+    text-decoration: none;
+    &:hover{
+        background-color: lighten($default2-color, 10%);
+        color: $default1-color;
+    }
+}
+
+.z-button{
+    @extend .button;
+    @include border-mixin(none, 15px, 2px);
+    border-color: $default2-color;
+    margin: 0 5px 0 5px;
+    padding: 14px 16px;
+    text-align: center;
+    display: inline-block;
+}

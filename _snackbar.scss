@@ -1,0 +1,18 @@
+#z-snackbar-content{
+    visibility: hidden;
+    color: $default2-color;
+    background-color: $primary-color;
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    padding: 16px;
+    margin-left: -125px;
+    left: 50%;
+    bottom: 30px;
+    box-shadow: 5px 5px 5px lighten($default2-color, 40%);
+    .show{
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+}

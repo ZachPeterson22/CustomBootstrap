@@ -1,0 +1,22 @@
+.title{
+    margin: 5px 5px 5px 5px;
+    @include border-mixin(solid, 5px, 2px);
+    background-color: $default1-color;
+}
+
+.z-title{
+    @extend .title;
+    text-align: center;
+    h1{
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+.z-mini-title{
+    @extend .title;
+    margin-left: 50px;
+    margin-right: 50px;
+    h3{
+        margin: 10px 50px 10px 50px;
+    }
+}

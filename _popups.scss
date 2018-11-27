@@ -1,0 +1,82 @@
+.z-popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    .z-popup-text-top{
+        text-align: center;
+        display: none;
+        width: 160px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+        background-color: lighten($default2-color, 20%);
+        color: $default1-color;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    }
+    .z-popup-text-left{
+        @extend .z-popup-text-top;
+        bottom: -40%;
+        left: -150%;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 100%;
+            margin-left: 0px;
+            border-width: 5px;
+            transform: rotate(-90deg);
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    }
+    .z-popup-text-right{
+        @extend .z-popup-text-top;
+        bottom: -40%;
+        left: 250%;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 0%;
+            margin-left: -10px;
+            border-width: 5px;
+            transform: rotate(90deg);
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    }
+    .z-popup-text-bot{
+        @extend .z-popup-text-top;
+        bottom: -225%;
+        left: 50%;
+        &:after{
+            content: "";
+            position: absolute;
+            top: -25%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            transform: rotate(180deg);
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    }
+}
+
+.center{
+    text-align: center;
+}

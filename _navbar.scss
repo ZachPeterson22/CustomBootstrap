@@ -1,0 +1,91 @@
+#z-navbar, #z-navbar-ex{
+    display: none;
+    background-color: $primary-color;
+    @include border-mixin(none, 0, 5px);
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .z-nav-obj{
+        float: left;
+    }
+    a{
+        cursor: pointer;
+        display: block;
+        padding: 18px 20px;
+        text-decoration: none;
+        color: $default2-color;
+        &:hover{
+            background-color: lighten($default2-color, 10%);
+            color: $default1-color;
+        }
+    }
+}
+
+#z-navbar-ex{
+    display: block;
+}
+
+#z-navbar-dropdown, #z-navbar-dropdown-ex{
+    background-color: $primary-color;
+    display: block;
+    li{
+        list-style-type: none;
+    }
+    .z-dropdown-container{
+        position: relative;
+        display: inline-block;
+        .z-dropdown-content{
+            position: absolute;
+            z-index: 1;
+            display: none;
+            .z-nav-obj{
+                float: none;
+                background-color: $primary-color;
+            }
+            a{
+                display: block;
+                cursor: pointer;
+                text-decoration: none;
+                color: $default2-color;
+                padding: 18px 20px;
+                &:hover{
+                    background-color: lighten($default2-color, 10%);
+                    color: $default1-color;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 18px 20px;
+    .icon{
+        width: 30px;
+        height: 3px;
+        background-color: $default2-color;
+        margin: 3px 0;
+    }
+    &:hover{
+        background-color: lighten($default2-color, 10%);
+    }
+    &:hover .icon{
+        background-color: $default1-color;
+    }
+}
+
+/*
+@media all and (max-width: 880px){
+    #z-navbar{
+        display: none;
+    }
+
+    #z-navbar-dropdown{
+        display: block;
+    }
+}
+*/

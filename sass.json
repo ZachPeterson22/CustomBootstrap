@@ -1,0 +1,39 @@
+{
+    "nav": [
+        ["Home", "index.html"], 
+        ["Nav Bar", "nav.html"],
+        ["Title", "title.html"],
+        ["Well", "well.html"],
+        ["Grid", "grid.html"],
+        ["Button", "button.html"],
+        ["Transition", "transition.html"],
+        ["Modal", "modal.html"],
+        ["SnackBar", "snack.html"],
+        ["SlideShow", "slideshow.html"],
+        ["Popups", "popup.html"]
+    ],
+
+    "quotes":  [
+        "'You Can't Keep Boogieing Like This. You'll Come Down With A Fever Of Some Sort.' - Leela",
+        "'Now, My Usual Fee Is 500 Bucks. But Seeing As How It's You, I'm Gonna' Need It In Advance.' - Bender",
+        "'Fry, Please Try To Understand. You're A Man. I'm A Woman. We're Just Too Different.' - Leela",
+        "'With A Warning Label This Big, You Know They Gotta' Be Fun!' - Hermes",
+        "'Hooray! A Happy Ending For The Rich People.' - Zoidberg",
+        "'Good News, Everyone!' - Professor",
+        "'Oh Wait, You're Serious. Let Me Laugh Even Harder.' - Bender"
+    ],
+
+    "slideImages": [
+        "pictures/hello.jpg",
+        "pictures/stretch.jpg",
+        "pictures/frogface.jpg",
+        "pictures/amazon.jpg"
+    ],
+
+    "slideCaption": [
+        "Oh...hello.",
+        "Aaaaaand stretch",
+        "MMMMMMMMMMMM!!!",
+        "Amazon Milk Frogs"
+    ]
+}

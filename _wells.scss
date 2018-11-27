@@ -1,0 +1,25 @@
+.z-code-well{
+    margin: 5px 5px 5px 5px;
+    @include border-mixin(solid, 5px, 2px);
+    background-color: $default1-color;
+    p{
+        margin: 5px 0 0 5px;
+    }
+    .z-well-body{
+        pre{
+            margin-left: 15px;
+            code{
+                white-space: pre-wrap;
+            }
+        }
+    }
+}
+
+.z-well{
+    margin: 5px 5px 5px 5px;
+    @include border-mixin(solid, 5px, 2px);
+    background-color: $default1-color;
+    .z-well-body{
+        margin: 5px 0 0 5px;
+    }
+}

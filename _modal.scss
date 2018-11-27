@@ -1,0 +1,28 @@
+.z-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $transparency-color;
+    @include border-mixin(none, 5px, 2px);
+    .z-modal-content{
+        @include border-mixin(none, 5px, 2px);
+        background-color: $default1-color;
+        margin: 5% auto;
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+.close-modal{
+    color: lighten($default2-color, 20%);
+    cursor: context-menu;
+    float: right;
+    &:hover{
+        color: $default2-color;
+    }
+}
